@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#app {
+  display: none;
+  background: #fff;
+  overflow: hidden;
+}
+#app.active {
+  display: block;
+}
+#app .header {
+  position: fixed;
+  top: 0;
+  height: 15vh;
+  z-index: 1;
+}
+#app .header .topbar {
+  height: 10vh;
+  background: #060a3d;
+  color: #fff;
+}
+#app .header nav > ul {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+#app .header nav > ul li {
+  text-align: center;
+  width: calc(100vw/3);
+}
+#app .header nav > ul liactive {
+  color: red;
+}
+#app .main .container {
+  margin: 15vh 0;
+  position: absolute;
+}
+#app .main .container h3 {
+  border-left: 3px solid red;
+  margin: 5px 0;
+}
+#app .main .container .hotList .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#app .main .container .hotList .box li {
+  width: calc(94vw/3);
+  height: 20vh;
+}
+#app .main .container .hotList .box li .img {
+  height: 80%;
+  background-size: cover;
+}
+#app .main .container .hotList .box li h4 {
+  height: 20%;
+}
+#app .main .container .dayChoose ul li {
+  border-top: 1px solid #ccc;
+  text-align: left;
+  overflow: hidden;
+  padding: 5px 0;
+  font-size: 13px;
+}
+#app .main .container .dayChoose ul li img {
+  float: left;
+  width: 3em;
+  height: 3em;
+}
+#app .main .container .dayChoose ul li h5 {
+  font-size: 1.2em;
+  overflow: hidden;
+}
+#app .main .container .dayChoose ul li p {
+  font-size: 0.8em;
+  color: #888;
+}
+#app .main .container .dayChoose ul li .sq {
+  width: 1em;
+  height: 1em;
+  float: left;
+  padding-top: 2px;
+}
+#app .main .container .dayChoose ul li .play {
+  float: right;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.75em;
+  margin-right: 1em;
+}
+#app .footer {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #060a3d;
+  z-index: 1;
+}
+#app .footer .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 20px;
+}
+#app .footer .actions svg {
+  width: 28px;
+  height: 28px;
+}
+#app .footer .actions svg.btn-play-pause {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=/app.a651375d.css.map */
