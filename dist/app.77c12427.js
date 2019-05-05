@@ -454,7 +454,7 @@ function () {
       $('.search label').on('click', function () {
         console.log('xxx');
         $('.search span').fadeIn('slow', function () {
-          $('.search span').fadeOut('8s');
+          $('.search span').fadeOut('slow');
         });
       }); //点击播放最近列表音乐
 
@@ -761,7 +761,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51266" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60455" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,7 +12,7 @@ class control{
     $('.search label').on('click',function(){
       console.log('xxx')
       $('.search span').fadeIn('slow',function(){
-        $('.search span').fadeOut('8s')
+        $('.search span').fadeOut('slow')
       })
     })
     //点击播放最近列表音乐
