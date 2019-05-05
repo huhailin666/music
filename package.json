@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel index.html --no-cache",
-    "build": "npx parcel build index.html --no-cache --out-dir 'build' "
+    "build": "npx parcel build *.html --public-url --out-dir 'build' ./ --no-source-maps --no-cache --detailed-report "
   },
   "keywords": [],
   "author": "",
