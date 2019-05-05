@@ -1,3 +1,4 @@
+import './player.js'
 
 class control{
   constructor(){
@@ -7,6 +8,13 @@ class control{
   }
   bind(){
     let _this=this;
+    //点击搜索
+    $('.search label').on('click',function(){
+      console.log('xxx')
+      $('.search span').fadeIn('slow',function(){
+        $('.search span').fadeOut('8s')
+      })
+    })
     //点击播放最近列表音乐
     $('#list').on('click','h5',function(){
       // $('#app').removeClass('active')

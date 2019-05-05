@@ -1,3 +1,5 @@
+
+
 class Player {
     constructor(node) {
         this.root = typeof node === 'string' ? document.querySelector(node) : node

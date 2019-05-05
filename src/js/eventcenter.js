@@ -1,9 +1,8 @@
-class eventCenter {
-    on(type, handler){
+var EventCenter = {
+    on:function(type, handler){
       $(document).on(type, handler)
-    }
-    fire(type, data){
+    },
+    fire:function(type, data){
       $(document).trigger(type, data)
     }
 }
-var EventCenter = new eventCenter();

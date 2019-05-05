@@ -6,6 +6,8 @@
     <meta name = "referrer" content="never">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>华为音乐</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+
     <!-- <link rel="stylesheet" href="./src/scss/app.scss">
     <link rel="stylesheet" href="./src/scss/index.scss"> -->
 </head>
@@ -52,7 +54,15 @@
                     <ul></ul>
                     <div class="addMore">加载更多</div>
                 </div>
-                <div class="search">搜索</div>
+                <div class="search">
+                    <div class="container">
+                        <input type="text">
+                        <label for="">搜索</label>
+                    </div>
+
+                    <span>客观别急，该功能正在开发中</span>
+                </div>
+                
             </div>
 
         </div>
@@ -156,10 +166,20 @@
 <ul id="list">
 
 </ul>
+<script>
+var EventCenter = {
+    on:function(type, handler){
+      $(document).on(type, handler)
+    },
+    fire:function(type, data){
+      $(document).trigger(type, data)
+    }
+}
+</script>
 <script src="//at.alicdn.com/t/font_1171246_ue30stg401.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="./src/js/app.js"></script>
+<script src="./src/js/eventcenter.js"></script>
+
 
 </body>
 </html>

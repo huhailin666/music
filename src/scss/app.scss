@@ -128,6 +128,31 @@
             display: block;
             clear: both;
         }
+        .search {
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    width: 60vw;
+                    height: 5vh;
+                    margin: 3vh 0;
+                }
+                label {
+                    margin-left: 1vw;
+                    padding: 1vw;
+                    font-size: 5vw;
+                    background: rgb(120, 90, 177);
+                }
+            }
+            span {
+                display: none;
+                border: 1px solid rgb(226, 71, 71);
+                padding: 5px 10px;
+                border-radius: 1vh;
+            }
+
+        }
         .recommend {
             ul {
                 li {
@@ -182,7 +207,6 @@
                     li {
                         width: calc(94vw/3);
                         height: 20vh;
-
                         .img {
                             height:80%;
                             background-size: cover;
@@ -241,6 +265,7 @@
                     }
                 }
             }
+
 
       
         }

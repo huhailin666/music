@@ -1,8 +1,6 @@
 
-import './eventcenter.js'
 import './icons.js'
 import './control.js'
-import './player.js'
 
 import '../scss/app.scss'
 import '../scss/index.scss'
