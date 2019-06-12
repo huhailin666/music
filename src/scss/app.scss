@@ -64,14 +64,13 @@
 #app {
     display: none;
     overflow: hidden;
-    background: #c5c8ec;
+    background: rgba(146, 152, 228,.5);
     &.active {
         display: block;
     }
     .header {
         position: fixed;
         top: 0;
-        height: 15vh;
         z-index: 1;
         .topbar {
             display: flex;
@@ -88,12 +87,13 @@
                 height: 4vh;
                 margin: 0 3vw 0  15vw;
             }
-            height: 10vh;
+            height: 8vh;
             background:#07108a;
             color:#fff;
         }
         nav>ul {
-            background:rgb(241, 234, 234);
+            color:#fefe;
+            background:rgba(146, 152, 228,.3);
             display: flex;
             flex-wrap: wrap;
             font-size: 20px;
@@ -129,20 +129,30 @@
             clear: both;
         }
         .search {
+            margin-top: 10px;
+
             .container {
+                background: rgba(92, 100, 207, 0.1);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width:90vw;
+                margin:0 auto;
+                border-radius: 30px;
+                margin-bottom: 10px;
+                // border: 1px solid blue;
                 input{
                     width: 60vw;
-                    height: 5vh;
-                    margin: 3vh 0;
+                    height: 30px;
+                    margin: 10px 0;
+                    border: none;
                 }
                 label {
                     margin-left: 1vw;
-                    padding: 1vw;
-                    font-size: 5vw;
-                    background: rgb(120, 90, 177);
+                    padding: 3px;
+                    font-size: 20px;
+                    background: #eee;
+                    border-radius: 5px;
                 }
             }
             span {
@@ -150,6 +160,7 @@
                 border: 1px solid rgb(226, 71, 71);
                 padding: 5px 10px;
                 border-radius: 1vh;
+                margin-top: 2vh;
             }
 
         }
@@ -225,7 +236,7 @@
                 }
             }
             .dayChoose {
-                background: #fdd;
+                background: rgba(146, 152, 228,.3);
                 ul {
                     li {
                         border-top: 1px solid #ccc;

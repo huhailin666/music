@@ -59,7 +59,7 @@
 #app {
   display: none;
   overflow: hidden;
-  background: #c5c8ec;
+  background: rgba(146, 152, 228, 0.5);
 }
 #app.active {
   display: block;
@@ -67,14 +67,13 @@
 #app .header {
   position: fixed;
   top: 0;
-  height: 15vh;
   z-index: 1;
 }
 #app .header .topbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   background: #07108a;
   color: #fff;
 }
@@ -89,7 +88,8 @@
   margin: 0 3vw 0 15vw;
 }
 #app .header nav > ul {
-  background: #f1eaea;
+  color: #fefe;
+  background: rgba(146, 152, 228, 0.3);
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
@@ -123,27 +123,38 @@
   display: block;
   clear: both;
 }
+#app .main .search {
+  margin-top: 10px;
+}
 #app .main .search .container {
+  background: rgba(92, 100, 207, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-bottom: 10px;
 }
 #app .main .search .container input {
   width: 60vw;
-  height: 5vh;
-  margin: 3vh 0;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
 }
 #app .main .search .container label {
   margin-left: 1vw;
-  padding: 1vw;
-  font-size: 5vw;
-  background: #785ab1;
+  padding: 3px;
+  font-size: 20px;
+  background: #eee;
+  border-radius: 5px;
 }
 #app .main .search span {
   display: none;
   border: 1px solid #e24747;
   padding: 5px 10px;
   border-radius: 1vh;
+  margin-top: 2vh;
 }
 #app .main .recommend ul li {
   border-top: 1px solid #ccc;
@@ -207,7 +218,7 @@
   background: rgba(121, 108, 192, 0.5);
 }
 #app .main .container .dayChoose {
-  background: #fdd;
+  background: rgba(146, 152, 228, 0.3);
 }
 #app .main .container .dayChoose ul li {
   border-top: 1px solid #ccc;

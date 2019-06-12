@@ -10,7 +10,6 @@ class control{
     let _this=this;
     //点击搜索
     $('.search label').on('click',function(){
-      console.log('xxx')
       $('.search span').fadeIn('slow',function(){
         $('.search span').fadeOut('slow')
       })
