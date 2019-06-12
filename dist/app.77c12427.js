@@ -198,7 +198,13 @@ function () {
         }
       });
       $('.btn-play-pause').on('click ', function () {
-        if (!_this.song) return;
+        if (!_this.song) {
+          console.log('下一曲');
+
+          _this.loadMusic(function () {
+            _this.setMusic();
+          });
+        }
 
         if ($('.footer .btn-play-pause').hasClass('play')) {
           _this.audio.play();
@@ -760,7 +766,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51420" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62014" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
